@@ -1,5 +1,51 @@
 # list-app
 
+## コマンド
+
+- 初めの設定
+
+```
+npm init --yes
+```
+
+- express と ejs のインストール
+
+```
+npm install express ejs
+```
+
+- サーバー起動
+
+```
+node app.js
+```
+
+### ファイル更新時に自動でサーバーが再起動する設定
+
+- nodemon インストール
+
+```
+npm install nodemon
+```
+
+- 実行コマンド
+
+```
+./node_modules/.bin/nodemon app.js
+```
+
+- package.json に以下を設定
+
+```
+ "start": "./node_modules/.bin/nodemon app.js"
+```
+
+- 起動
+
+```
+npm run start
+```
+
 ## MySql 接続 & データ作成
 
 - MySql 接続
